@@ -7,7 +7,9 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+        aliment.cpp \
         backend.cpp \
+        concretealimentrepository.cpp \
         main.cpp
 
 RESOURCES += qml.qrc
@@ -25,10 +27,15 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 
 HEADERS += \
-    backend.h
+    AlimentRepository.h \
+    BaseRepository.h \
+    aliment.h \
+    backend.h \
+    concretealimentrepository.h
 
 CONFIG += qmltypes
 QML_IMPORT_NAME = io.qt.examples.backend
 QML_IMPORT_MAJOR_VERSION = 1
 
-DISTFILES +=
+DISTFILES += \
+    DataAlimente
