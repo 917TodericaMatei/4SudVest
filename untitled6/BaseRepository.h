@@ -16,7 +16,7 @@ public:
     };
     ~BaseRepository() {
     };
-    virtual std::vector<T*> get_all() = 0;
+    virtual std::vector<T> get_all() = 0;
 
     virtual void insert_data(T* data) = 0;
 

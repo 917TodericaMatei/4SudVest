@@ -4,7 +4,7 @@ ConcreteAlimentRepository::ConcreteAlimentRepository()
 {
 
 }
-std::vector<Aliment> ConcreteAlimentRepository::load_from_file() {
+std::vector<Aliment> ConcreteAlimentRepository::get_all() {
     std::fstream file;
     file.open(fileName, std::ios::out | std::ios::in | std::ios::app);
     if (file.is_open()) {
