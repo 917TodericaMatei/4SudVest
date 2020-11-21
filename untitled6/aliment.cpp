@@ -3,11 +3,13 @@
 Aliment::Aliment()
 {
     this->glucide=0;
+    this->name="";
     //this->id=0;
 }
 
-Aliment::Aliment(double glucide){
+Aliment::Aliment(std::string name,double glucide){
     this->glucide=glucide;
+    this->name=name;
 }
 
 //setters
@@ -17,6 +19,7 @@ void Aliment::setName(std::string newName){
 
 void Aliment::setGlucide(double newGlucide){
     this->glucide=newGlucide;
+
 }
 
 //getters

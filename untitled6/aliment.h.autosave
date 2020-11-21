@@ -7,7 +7,7 @@ class Aliment
 private:
     int id;
     std::string name;
-    double masa,carbo,glucide;
+    double glucide;
 
 public:
     Aliment();
