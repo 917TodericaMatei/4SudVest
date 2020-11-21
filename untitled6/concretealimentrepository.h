@@ -12,7 +12,7 @@ private:
     std::vector<Aliment> arr;
 public:
     ConcreteAlimentRepository();
-    std::vector<Aliment> load_from_file();
+    std::vector<Aliment> get_all();
     Aliment find_aliment_by_name(std::string name);
 };
 
