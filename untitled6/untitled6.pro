@@ -10,7 +10,8 @@ SOURCES += \
         aliment.cpp \
         backend.cpp \
         concretealimentrepository.cpp \
-        main.cpp
+        main.cpp \
+        services.cpp
 
 RESOURCES += qml.qrc
 
@@ -31,7 +32,8 @@ HEADERS += \
     BaseRepository.h \
     aliment.h \
     backend.h \
-    concretealimentrepository.h
+    concretealimentrepository.h \
+    services.h
 
 CONFIG += qmltypes
 QML_IMPORT_NAME = io.qt.examples.backend

@@ -11,7 +11,6 @@ class BackEnd : public QObject
     Q_PROPERTY(QString cod READ cod WRITE setCod NOTIFY codChanged)
     Q_PROPERTY(QString glicemie READ glicemie WRITE setGlicemie NOTIFY glicemieChanged)
     Q_PROPERTY(QString searchString READ searchString WRITE setSearchString NOTIFY searchStringChanged)
-    QML_ELEMENT
 
 public:
     explicit BackEnd(QObject *parent = nullptr);
