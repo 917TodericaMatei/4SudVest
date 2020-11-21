@@ -16,6 +16,7 @@ Page {
       anchors.verticalCenterOffset: 103
       anchors.centerIn: parent
 
+
         }
 
     Label {

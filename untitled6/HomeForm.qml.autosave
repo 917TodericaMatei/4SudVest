@@ -19,6 +19,5 @@ Page {
         anchors.topMargin: 192
         transformOrigin: Item.Bottom
 
-
 }
 }

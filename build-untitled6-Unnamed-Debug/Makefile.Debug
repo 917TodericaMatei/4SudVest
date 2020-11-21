@@ -60,7 +60,7 @@ OBJECTS       = debug/backend.o \
 		debug/qrc_qml.o \
 		debug/moc_backend.o
 
-DIST          =  ..\untitled6\backend.h ..\untitled6\backend.cpp \
+DIST          = ../../../../Desktop/background.jpg ..\untitled6\backend.h ..\untitled6\backend.cpp \
 		..\untitled6\main.cpp
 QMAKE_TARGET  = untitled6
 DESTDIR        = debug\ #avoid trailing-slash linebreak
@@ -206,8 +206,11 @@ compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_qml.cpp
 debug/qrc_qml.cpp: ../untitled6/qml.qrc \
 		../../../../Desktop/QT/5.15.2/mingw81_64/bin/rcc.exe \
+		../untitled6/Page3Form.qml \
+		../untitled6/Page4Form.qml \
 		../untitled6/HomeForm.qml \
 		../untitled6/Page1Form.qml \
+		../untitled6/Page5Form.qml \
 		../untitled6/Page2Form.qml \
 		../untitled6/main.qml
 	C:\Users\user\Desktop\QT\5.15.2\mingw81_64\bin\rcc.exe -name qml ..\untitled6\qml.qrc -o debug\qrc_qml.cpp

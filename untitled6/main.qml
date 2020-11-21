@@ -1,5 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import io.qt.examples.backend 1.0
 
 ApplicationWindow {
     id: window
@@ -7,6 +8,7 @@ ApplicationWindow {
     height: 480
     visible: true
     title: qsTr("Stack")
+
 
 
     header: ToolBar {
@@ -59,7 +61,7 @@ ApplicationWindow {
                 }
             }
             ItemDelegate {
-                text: qsTr("Detalii despre produs")
+                text: qsTr("Date personale")
                 width: parent.width
                 onClicked: {
                     stackView.push("Page3Form.qml")
@@ -67,10 +69,18 @@ ApplicationWindow {
                 }
             }
             ItemDelegate {
-                text: qsTr("Helps and tips")
+                text: qsTr("Calibrare")
                 width: parent.width
                 onClicked: {
                     stackView.push("Page4Form.qml")
+                    drawer.close()
+                }
+            }
+            ItemDelegate {
+                text: qsTr("Helps and tips")
+                width: parent.width
+                onClicked: {
+                    stackView.push("Page5Form.qml")
                     drawer.close()
                 }
             }
