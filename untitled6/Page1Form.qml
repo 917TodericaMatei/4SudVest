@@ -2,8 +2,8 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import io.qt.examples.backend 1.0
-
 Page {
+
     width: 600
     height: 400
     title: qsTr("Alimente")
@@ -20,14 +20,17 @@ Page {
 
     Label {
         TextField {
+            id:numeal
             x: -188
             y: 8
             placeholderText: qsTr("Introduceti alimentul:")
-            text:backend.cod
-            onEditingFinished: backend.cod = text
+            text: backend.searchString
+
+
         }
         anchors.centerIn: parent
         Button {
+            onClicked: backend.searchString=numeal.text
              id: control
              x: 61
              y: 8

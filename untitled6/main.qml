@@ -53,7 +53,7 @@ ApplicationWindow {
                 text: qsTr("Camara scan")
                 width: parent.width
                 onClicked: {
-                    stackView.push("Page2Form.ui.qml")
+                    stackView.push("Page2Form.qml")
                     drawer.close()
 
                 }
@@ -62,7 +62,7 @@ ApplicationWindow {
                 text: qsTr("Detalii despre produs")
                 width: parent.width
                 onClicked: {
-                    stackView.push("Page3Form.ui.qml")
+                    stackView.push("Page3Form.qml")
                     drawer.close()
                 }
             }
@@ -70,7 +70,7 @@ ApplicationWindow {
                 text: qsTr("Helps and tips")
                 width: parent.width
                 onClicked: {
-                    stackView.push("Page4Form.ui.qml")
+                    stackView.push("Page4Form.qml")
                     drawer.close()
                 }
             }

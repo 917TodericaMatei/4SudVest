@@ -1,0 +1,86 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "BackEnd",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "name": "cod",
+                        "notify": "codChanged",
+                        "read": "cod",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setCod"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "name": "glicemie",
+                        "notify": "glicemieChanged",
+                        "read": "glicemie",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setGlicemie"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "name": "searchString",
+                        "notify": "searchStringChanged",
+                        "read": "searchString",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setSearchString"
+                    }
+                ],
+                "qualifiedClassName": "BackEnd",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "codChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "glicemieChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "searchStringChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "backend.h",
+        "outputRevision": 67
+    }
+]

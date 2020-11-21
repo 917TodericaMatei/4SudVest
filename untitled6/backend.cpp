@@ -36,12 +36,14 @@ void BackEnd::setGlicemie(const QString &nglicemie)
 QString BackEnd::searchString()
 {
     return p_searchString;
+
 }
 
 void BackEnd::setSearchString(const QString &nsst)
 {
     if(nsst== p_searchString)
         return;
+    qDebug()<<"merge";
     p_searchString = nsst;
     emit searchStringChanged();
 }
