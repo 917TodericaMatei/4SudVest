@@ -4,6 +4,11 @@ ConcreteAlimentRepository::ConcreteAlimentRepository()
 {
 
 }
+
+ConcreteAlimentRepository::ConcreteAlimentRepository(std::string name)
+{
+    this->fileName = name;
+}
 std::vector<Aliment> ConcreteAlimentRepository::get_all() {
     std::fstream file;
     file.open(fileName, std::ios::out | std::ios::in | std::ios::app);

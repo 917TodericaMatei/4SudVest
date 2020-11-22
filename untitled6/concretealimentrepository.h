@@ -12,8 +12,16 @@ private:
     std::vector<Aliment> arr;
 public:
     ConcreteAlimentRepository();
-    std::vector<Aliment> get_all();
+    ConcreteAlimentRepository(std::string);
     Aliment find_aliment_by_name(std::string name);
+
+    std::vector<Aliment> get_all();
+
+    void insert_data(Aliment* data){};
+
+    void delete_data(Aliment* data){};
+
+    void update_data(Aliment* data){};
 };
 
 #endif // CONCRETEALIMENTREPOSITORY_H

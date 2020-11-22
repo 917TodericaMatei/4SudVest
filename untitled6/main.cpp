@@ -2,6 +2,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <backend.h>
+#include <services.h>
 int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
@@ -18,6 +19,6 @@ int main(int argc, char *argv[])
     BackEnd back;
     engine.rootContext()->setContextProperty("backend",&back);
     engine.load(url);
-
+    services *serv = new services(&back);
     return app.exec();
 }

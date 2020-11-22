@@ -85,4 +85,9 @@ Page {
         }
        }
 
+    Button{
+        text: qsTr("Submit")
+        onPressed: backend.glicemieStart=glicemiebefore.text
+        onClicked: backend.glicemieStop=glicemieafter.text
+    }
 }
