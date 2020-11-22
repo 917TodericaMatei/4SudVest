@@ -1,4 +1,4 @@
-QT += quick
+QT += quick network
 
 CONFIG += c++11
 
@@ -11,6 +11,7 @@ SOURCES += \
         backend.cpp \
         concretealimentrepository.cpp \
         main.cpp \
+        net.cpp \
         services.cpp
 
 RESOURCES += qml.qrc
@@ -33,10 +34,12 @@ HEADERS += \
     aliment.h \
     backend.h \
     concretealimentrepository.h \
+    net.h \
     services.h
 
 CONFIG += qmltypes
 QML_IMPORT_NAME = io.qt.examples.backend
 QML_IMPORT_MAJOR_VERSION = 1
 
-DISTFILES +=
+DISTFILES += \
+    DataAlimente

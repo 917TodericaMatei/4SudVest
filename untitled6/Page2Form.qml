@@ -75,6 +75,8 @@ Page {
             x: 123
             y: 234
             placeholderText: qsTr("Introduceti codul:")
+            text: backend.cod
+            onEditingFinished: backend.cod=text
         }
     }
 
