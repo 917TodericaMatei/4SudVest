@@ -18,6 +18,7 @@ void services::codChanged(QString searchString)
 {
     network.CheckSite(searchString);
 //    qDebug()<<searchString;
+    qDebug()<<network.carbs;//YES THIS IS A RACE CONDITION :)
 }
 
 void services::glicemieStartChanged(QString searchString)

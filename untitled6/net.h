@@ -13,6 +13,7 @@ class net : public QObject
 public:
     explicit net(QObject *parent = nullptr);
     QString baseUrl = "https://world.openfoodfacts.org/api/v0/product/";
+    double carbs=0.0F;
 private slots:
     void replyFinished(QNetworkReply *);
 public:
