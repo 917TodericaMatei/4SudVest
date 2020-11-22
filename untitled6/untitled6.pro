@@ -12,6 +12,7 @@ SOURCES += \
         concretealimentrepository.cpp \
         main.cpp \
         net.cpp \
+        serviceglicemie.cpp \
         services.cpp
 
 RESOURCES += qml.qrc
@@ -35,6 +36,7 @@ HEADERS += \
     backend.h \
     concretealimentrepository.h \
     net.h \
+    serviceglicemie.h \
     services.h
 
 CONFIG += qmltypes

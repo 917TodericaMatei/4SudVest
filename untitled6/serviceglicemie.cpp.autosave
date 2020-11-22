@@ -1,0 +1,30 @@
+#include "serviceglicemie.h"
+
+serviceGlicemie::serviceGlicemie()
+{
+          
+}
+
+void serviceGlicemie :: calibrareGlicemieAstazi(double glicemieStart , double glicemieStop)
+{
+    this->glicemieMagicNumber = (glicemieStart - glicemieStop)/10;
+}
+
+int serviceGlicemie :: getCantitateWithMN(double glicemieActuala, double carbohidrati)
+{
+    this->crestereGlicemie = glicemieMagicNumber * carbohidrati;
+    int diferenta = 250 - glicemieActuala;
+            
+            int coeficientDiferenta = int(diferenta / crestereGlicemie);
+            this->cantitatePosibilaDeConsumat = coeficientDiferenta * 100;
+}
+
+double serviceGlicemie :: afisareCrestereGlicemie()
+{
+    return crestereGlicemie;
+}
+
+double serviceGlicemie :: afisareCrestereGlicemie()
+{
+    return crestereGlicemie;
+}

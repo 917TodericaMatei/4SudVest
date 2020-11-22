@@ -1,0 +1,18 @@
+#ifndef SERVICEGLICEMIE_H
+#define SERVICEGLICEMIE_H
+
+
+class serviceGlicemie
+{
+private:
+    double crestereGlicemie;
+    double    glicemieMagicNumber;
+    int cantitatePosibilaDeConsumat;
+public:
+    serviceGlicemie();
+    void calibrareGlicemieAstazi(double glicemieStart , double glicemieStop);
+    int     getCantitateWithMN(double glicemieActuala, double carbohidrati);
+    double afisareCrestereGlicemie();
+};
+
+#endif // SERVICEGLICEMIE_H
